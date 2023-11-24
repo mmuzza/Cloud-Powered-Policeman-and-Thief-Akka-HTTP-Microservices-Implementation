@@ -2,5 +2,15 @@
 <project version="4">
   <component name="ScalaCompilerConfiguration">
     <profile name="sbt 1" modules="AkkaHttpExample" />
+    <profile name="sbt 2" modules="RandomWalks">
+      <option name="compileOrder" value="JavaThenScala" />
+      <option name="deprecationWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="--explain-types" />
+        <parameter value="-Ytasty-reader" />
+        <parameter value="-Ytasty-reader" />
+      </parameters>
+    </profile>
   </component>
 </project>
