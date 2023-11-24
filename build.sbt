@@ -52,7 +52,10 @@ lazy val root = (project in file("."))
   .settings(
     scalaVersion := "2.13.10",
     name := "RandomWalks",
-    libraryDependencies ++= commonDependencies, // Adding common dependencies to your project
+//    libraryDependencies ++= commonDependencies, // Adding common dependencies to your project
+    libraryDependencies ++= commonDependencies ++ Seq(
+      "org.yaml" % "snakeyaml" % "1.28"
+    ),
     //libraryDependencies += "your.group" % "your-artifact" % "1.0" from "External Libraries/netmodelsim.jar",
   )
 

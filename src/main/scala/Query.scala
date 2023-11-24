@@ -1,8 +1,23 @@
 import NetGraphAlgebraDefs.{NetGraph, NodeObject}
 
+
+// This class takes both original and perturbed graph
+// It contains two major functions which are used in finding:
+// The path to thief's node from Police & valuable data node from Thief
 class Query(netGraph: NetGraph, perturbedNetGraph: NetGraph) {
 
-  // Function to calculate a score for a node
+  // This function is used in calculating the score
+  // It compares the perturbed graph node with original graph node
+
+  // The denominator of the score is original graph node:
+  //      - It is calculates based on if:
+  //          - It exists in original graph then denominator += 1
+  //          - Number of edges denominator += # Of Edges
+
+  // The numerator of the score is perturbed graph node:
+  //      - It is calculates based on if:
+  //          - It exists in original graph then numerator += 1
+  //          - Number of edges numerator += # Of Edges
   def calculateScore(node: NodeObject): String = {
     var adjacentNodes = new FindConnectedNodes
     val originalAdjacent: List[NodeObject] = adjacentNodes.getVNodesForSource(netGraph, node)
@@ -23,6 +38,12 @@ class Query(netGraph: NetGraph, perturbedNetGraph: NetGraph) {
     score
   }
 
+  // This function takes a starting node which is thief's location
+  // It loads in perturbed graph and searches and finds the node
+  // It then calls on FindConnectedNodes to get the adjacent nodes
+  // It keeps doing that using iterative approach fo finding the closes valuable data node.
+  // It stores the path to getting the valuable data node along with each node's score by calling calculateScore
+  // Then returns the path
   def findClosestValuableDataNode(sourceNode: NodeObject): Option[String] = {
     val connectedNodesFinder = new FindConnectedNodes()
 
@@ -65,38 +86,12 @@ class Query(netGraph: NetGraph, perturbedNetGraph: NetGraph) {
 
 
 
-
-//    def findClosestValuableDataNode(sourceNode: NodeObject): Option[String] = {
-//    val connectedNodesFinder = new FindConnectedNodes()
-//
-//    var visited = Set.empty[NodeObject]
-//    var queue = List((sourceNode, ""))
-//
-//    while (queue.nonEmpty) {
-//      val (currentNode, pathSoFar) = queue.head
-//      queue = queue.tail
-//
-//      if (currentNode.valuableData) {
-//        // If the current node has "valuableData", return the path
-//        return Some(pathSoFar + currentNode.id.toString)
-//      } else {
-//        // Explore the connected nodes
-//        val vNodes = connectedNodesFinder.getVNodesForSource(perturbedNetGraph, currentNode)
-//        val unvisitedNodes = vNodes.filterNot(visited.contains)
-//
-//        // Enqueue unvisited nodes with updated path
-//        queue ++= unvisitedNodes.map(nextNode => (nextNode, pathSoFar + currentNode.id.toString + "\n"))
-//
-//        // Mark the current node as visited
-//        visited += currentNode
-//      }
-//    }
-//
-//    // If no valuable node is found
-//    None
-//  }
-
-
+  // This function takes a starting node which is police officer's location and thief's location
+  // It loads in perturbed graph and searches and finds the police officer node
+  // It then calls on FindConnectedNodes to get the adjacent nodes of police officer's node
+  // It keeps doing that using iterative approach fo finding the closet route to thief's node
+  // It stores the path to getting the thief's node along with each node's score by calling calculateScore
+  // Then returns the path
   def findThiefLocation(startPoliceNode: NodeObject, destinationThiefNode: NodeObject): Option[String] = {
     val connectedNodesFinder = new FindConnectedNodes()
 
