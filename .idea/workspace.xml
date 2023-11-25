@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb36c1e6-b765-4500-bc01-1641c3ba8806" name="Changes" comment="Test cases remaining" />
+    <list default="true" id="fb36c1e6-b765-4500-bc01-1641c3ba8806" name="Changes" comment="Configuration updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/NetGraphSim.2023-11-24.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/NetGraphSim.2023-11-24.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/WebServer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/WebServer.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,13 +72,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="GameApp" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="GameApp" />
-      <module name="AkkaHttpExample" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="RandomWalks" />
@@ -82,9 +79,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebServer" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="WebServer" />
+    <configuration name="Test" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="RandomWalks" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="testClassPath" value="Test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.Test 1 for Move Validator Class" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="RandomWalks" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="Test" />
+      <option name="testName" value="Test 1 for Move Validator Class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.Test 2 for Move Validator Class" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="RandomWalks" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="Test" />
+      <option name="testName" value="Test 2 for Move Validator Class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.Test 3 for Move Validator Class" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="RandomWalks" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="Test" />
+      <option name="testName" value="Test 3 for Move Validator Class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,8 +137,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.WebServer" />
-        <item itemvalue="Application.GameApp" />
+        <item itemvalue="ScalaTest.Test" />
+        <item itemvalue="ScalaTest.Test.Test 1 for Move Validator Class" />
+        <item itemvalue="ScalaTest.Test.Test 2 for Move Validator Class" />
+        <item itemvalue="ScalaTest.Test.Test 3 for Move Validator Class" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700870246571</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Configuration updated">
+      <option name="closed" value="true" />
+      <created>1700870872207</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700870872207</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +183,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test cases remaining" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test cases remaining" />
+    <MESSAGE value="Configuration updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuration updated" />
   </component>
 </project>

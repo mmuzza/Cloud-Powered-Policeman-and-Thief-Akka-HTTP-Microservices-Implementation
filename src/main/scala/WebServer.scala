@@ -120,10 +120,11 @@ object WebServer {
     logger.info("Registering route and path successful")
 
     logger.info("Connecting to the local host")
-    val bindingFuture = Http().bindAndHandle(route, "localhost", 8080)
-    logger.info("Server online at http://localhost:8080/")
+    val bindingFuture = Http().bindAndHandle(route, "localhost", 9000)
+    logger.info("Server online at http://localhost:9000/")
 
   } // end of startServerAndGame function
+
 
 
 } // Object WebServer ends here
