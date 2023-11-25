@@ -59,12 +59,6 @@ lazy val root = (project in file("."))
     //libraryDependencies += "your.group" % "your-artifact" % "1.0" from "External Libraries/netmodelsim.jar",
   )
 
-// Assembly
-// assemblyMergeStrategy in assembly := {
-//   case PathList("META-INF", _*) => MergeStrategy.discard
-//   case _                        => MergeStrategy.first
-// }
-
 exportJars := true
 
 // Define Scala Compiler options.
